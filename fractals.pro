@@ -9,17 +9,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    function.cpp \
-    main.cpp \
-    mainwindow.cpp
+    Fractals.cpp \
+    Info.cpp \
+    main.cpp
 
 HEADERS += \
-    function.h \
-    mainwindow.h
+    Fractals.h \
+    Info.h
 
 FORMS += \
-    mainwindow.ui
-
+    Fractals.ui \
+    Info.ui
+win32: RC_FILE = icon.rc
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
